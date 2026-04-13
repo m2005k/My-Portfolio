@@ -4,7 +4,6 @@ import { projectData } from "../data/projects";
 import { motion } from "framer-motion";
 
 function Projects() {
-  const [filter] = useState("all");
 
   const filteredProjects = projectData;
 

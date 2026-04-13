@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+import React from "react";
 import { projectData } from "../data/projects";
 import { motion } from "framer-motion";
 

@@ -13,14 +13,14 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Hero />
+      <Hero/>
       <About />
       <Projects />
       <Skills/>
       <Certifications />
       <Contact />
     </div>
-  );
+  )
 }
 
 export default App;

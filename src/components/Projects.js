@@ -6,21 +6,11 @@ import { motion } from "framer-motion";
 function Projects() {
   const [filter] = useState("all");
 
-  const filteredProjects =
-    filter === "all"
-      ? projectData
-      : projectData.filter((p) => p.category === filter);
+  const filteredProjects = projectData;
 
   return (
     <section id="projects">
       <h2>My Projects</h2>
-
-      {/* FILTER BUTTONS */}
-      {/* <div className="filters">
-        <button onClick={() => setFilter("all")}>All</button>
-        <button onClick={() => setFilter("react")}>React</button>
-        <button onClick={() => setFilter("js")}>JavaScript</button>
-      </div> */}
 
       <div className="grid">
         {filteredProjects.map((project, index) => (
@@ -31,9 +21,11 @@ function Projects() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
+            {/* IMAGE SECTION */}
             <div className="card-image">
-              <img src={project.image} alt="project" />
+              <img src={project.image} alt={project.title} />
 
+              {/* OVERLAY (HOVER BUTTONS) */}
               <div className="overlay">
                 <a href={project.live} target="_blank" rel="noreferrer">
                   Live
@@ -44,6 +36,7 @@ function Projects() {
               </div>
             </div>
 
+            {/* TEXT */}
             <div className="card-content">
               <h3>{project.title}</h3>
               <p>{project.description}</p>

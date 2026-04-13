@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub } from "react-icons/fa";
 
 function Hero() {
   return (
@@ -13,11 +14,23 @@ function Hero() {
       </p>
 
       <div className="hero-buttons">
-        <a href="#projects" className="btn primary">View Projects</a>
-        <a href="/resume.pdf" download className="btn secondary">
-          Download Resume
-        </a>
-      </div>
+  <a href="#projects" className="btn primary">
+    View Projects
+  </a>
+
+  <a href="/resume.pdf" download className="btn secondary">
+    Resume
+  </a>
+
+  <a 
+  href="https://github.com/m2005k"
+  target="_blank"
+  rel="noreferrer"
+  className="btn github"
+>
+  <FaGithub /> GitHub
+</a>
+</div>
     </section>
   );
 }

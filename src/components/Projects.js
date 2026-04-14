@@ -8,7 +8,7 @@ function Projects() {
   const filteredProjects = projectData;
 
   return (
-    <section id="projects">
+    <section id="projects" className="reveal">
       <h2>My Projects</h2>
 
       <div className="grid">

@@ -3,7 +3,7 @@ import { certifications } from "../data/certifications";
 
 function Certifications() {
   return (
-    <section id="certifications">
+    <section id="certifications" className="reveal">
       <h2>My Certifications</h2>
 
       <div className="cert-grid">

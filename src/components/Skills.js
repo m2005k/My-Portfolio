@@ -23,7 +23,7 @@ function Skills() {
   ];
 
   return (
-    <section id="skills">
+    <section id="skills" className="reveal">
       <h2>My Skills</h2>
 
       <div className="skills-grid">
